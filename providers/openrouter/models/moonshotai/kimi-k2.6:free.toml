@@ -1,17 +1,15 @@
-temperature = true
+name = "Kimi K2.6 (free)"
+temperature = false
 tool_call = true
-structured_output = true
+structured_output = false
 
 [extends]
 from = "moonshotai/kimi-k2.6"
-
-[interleaved]
-field = "reasoning_details"
+omit = ["cost.cache_read"]
 
 [cost]
-input = 0.684
-output = 3.42
-cache_read = 0.144
+input = 0
+output = 0
 
 [limit]
 context = 262_144
